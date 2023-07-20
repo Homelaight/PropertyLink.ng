@@ -17,6 +17,9 @@ nav {
 .nav-list li {
   margin-left: 4rem;
 }
+.nav-list li:hover {
+  cursor: pointer;
+}
 .register {
   list-style: none;
   display: flex;
@@ -37,6 +40,37 @@ nav {
 .hero-section .container .door h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+.search-bar {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  background-color: #0c0c0cda;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.search-bar input {
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: white;
+  width: 80%;
+}
+::placeholder {
+  color: #d1d1d1;
+}
+.search-bar button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #3752b2;
+  border-style: none;
+  color: #fff;
+}
+.search-bar button:hover {
+  background: #415dc1;
+  cursor: pointer;
 }
 .exp-info {
   position: absolute;
