@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  /* outline: 1px solid red; */
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -14,19 +14,45 @@ nav {
   list-style: none;
   display: flex;
 }
+
 .nav-list li {
   margin-left: 4rem;
 }
+
 .nav-list li:hover {
   cursor: pointer;
 }
+
 .register {
   list-style: none;
   display: flex;
 }
+
 .register li {
   margin-left: 2rem;
 }
+
+  /* CSS to style the clickable list items */
+
+  ul.nav-list li,
+  ul.register li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  ul.nav-list li a,
+  ul.register li a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove the underline */
+  }
+
+  ul.register button {
+    background-color: #3752b2;
+    text-decoration: none;
+    color: white;
+  }
+
 .hero-section {
   background: url(assets/Hero-bg.jpeg);
   background-repeat: no-repeat;
@@ -37,10 +63,12 @@ nav {
   color: white;
   padding: 2rem 4rem;
 }
+
 .hero-section .container .door h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
 .search-bar {
   color: #fff;
   display: flex;
@@ -51,6 +79,7 @@ nav {
   margin-top: 2rem;
   padding: 1rem;
 }
+
 .search-bar input {
   background: transparent;
   border: 0;
@@ -58,9 +87,11 @@ nav {
   color: white;
   width: 80%;
 }
+
 ::placeholder {
   color: #d1d1d1;
 }
+
 .search-bar button {
   padding: 10px 15px;
   border-radius: 8px;
@@ -68,10 +99,12 @@ nav {
   border-style: none;
   color: #fff;
 }
+
 .search-bar button:hover {
   background: #415dc1;
   cursor: pointer;
 }
+
 .exp-info {
   position: absolute;
   display: flex;
@@ -89,18 +122,22 @@ nav {
   background: #f5f5f5;
   box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.1);
 }
+
 .exp-info div h2 {
   color: #3752b2;
 }
+
 .exp-info div p {
   font-weight: 600;
 }
+
 .discount-offers {
   background-color: #dcdde8;
   padding: 14rem 4rem;
   justify-content: center;
   align-items: center;
 }
+
 .discount-offers h2 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
@@ -111,6 +148,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
 .card {
   width: 30%;
   background-color: #f5f5f5;
@@ -118,12 +156,15 @@ nav {
   box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.1);
   transition: 0.2s ease;
 }
+
 .card:hover {
   transform: translateY(-2px);
 }
+
 .card ul {
   display: flex;
 }
+
 .card ul li {
   margin-right: 0.5rem;
   margin-bottom: 10px;
@@ -133,6 +174,7 @@ nav {
 .card .container {
   padding: 1rem 1rem;
 }
+
 .card .img {
   background-color: red;
   height: 200px;
@@ -140,12 +182,15 @@ nav {
   background-size: cover;
   border-radius: 0.8rem 0.8rem 0 0;
 }
+
 .card p {
   margin-bottom: 10px;
 }
+
 .card p span {
   opacity: 70%;
 }
+
 .card button {
   padding: 1rem 3rem;
   margin-bottom: 1rem;
@@ -154,51 +199,62 @@ nav {
   border-style: none;
   color: #fff;
 }
+
 .card button:hover {
   background: #415dc1;
   cursor: pointer;
 }
+
 .card-1 {
   background-image: url("assets/img1.jpeg");
 }
+
 .card-2 {
   background-image: url("assets/img2.jpeg");
 }
+
 .card-3 {
   background-image: url("assets/img3.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .card-4 {
   background-image: url("assets/img4.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .card-5 {
   background-image: url("assets/img5.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .card-6 {
   background-image: url("assets/img6.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .card-7 {
   background-image: url("assets/img7.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .card-8 {
   background-image: url("assets/img8.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .card-9 {
   background-image: url("assets/img9.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .load-btn {
   display: flex;
   justify-content: center;
@@ -211,6 +267,7 @@ nav {
   margin-top: 2rem;
   margin-bottom: 8rem;
 }
+
 .load-btn:hover {
   background: #415dc1;
   cursor: pointer;

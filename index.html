@@ -18,16 +18,21 @@
           <span>PropertyLink.ng</span>
         </div>
         <ul class="nav-list">
-          <li>Buy</li>
-          <li>Sell</li>
-          <li>Rent</li>
-          <li>About Us</li>
-        </ul>
+            <li><a href="#buy">Buy</a></li>
+            <li><a href="#sell">Sell</a></li>
+            <li><a href="#rent">Rent</a></li>
+            <li><a href="#about-us">About Us</a></li>
+          </ul>
+          
+          <ul class="register">
 
-        <ul class="register">
-          <li>Register</li>
-          <li>Log In</li>
-        </ul>
+            <!-- Button with onClick event -->
+
+            <!-- <button onclick="redirectToAnotherFile()">Log In</button> -->
+            <button type="button" id="btn" onclick="redirectToAnotherFile()">Log In</button>
+            <li><a href="#login.html">Register</a></li>
+            <li><a href="#login.html">Log In</a></li>
+          </ul>
       </nav>
 
       <div class="container">
@@ -45,7 +50,7 @@
           </p>
           <div class="search">
             <form action="" class="search-bar">
-                <input type="text" placeholder="Enter your location">
+                <input type="text" placeholder="Enter your location...">
                 <button type="submit">Find Property</button>
             </form>
           </div>
@@ -239,5 +244,13 @@
       </div>
       <button class="load-btn">Load More</button>
     </section>
+
+    <script>
+        function redirectToAnotherFile() {
+    // Use window.location to redirect to another file in the same folder.
+    // Replace 'login.html' with the actual filename you want to link to.
+    window.location.href = 'login.html';
+}
+    </script>
   </body>
 </html>
