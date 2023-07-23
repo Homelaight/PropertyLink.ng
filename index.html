@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>PropertyLink.ng</title>
   </head>
   <body>
@@ -25,19 +26,14 @@
           </ul>
           
           <ul class="register">
-
-            <!-- Button with onClick event -->
-
-            <!-- <button onclick="redirectToAnotherFile()">Log In</button> -->
-            <button type="button" id="btn" onclick="redirectToAnotherFile()">Log In</button>
-            <li><a href="#login.html">Register</a></li>
-            <li><a href="#login.html">Log In</a></li>
+            <li><a href="#login.html" onclick="redirectToAnotherFile()"> Register</a></li>
+            <li><a href="#login.html" onclick="redirectToAnotherFile()"> Log In</a></li>
           </ul>
       </nav>
 
       <div class="container">
         <div class="door">
-          <h1>
+          <h1 class="animate__animated animate__fadeIn">
             Unlock the door to your <br />
             perfect property!
           </h1>
@@ -250,6 +246,21 @@
     // Use window.location to redirect to another file in the same folder.
     window.location.href = 'login.html';
 }
+
+const animatedElements = document.querySelectorAll(".animate__animated");
+
+  function fadeInOnScroll() {
+    animatedElements.forEach((element) => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (elementPosition < screenHeight * 0.9) {
+        element.classList.add("animate__fadeIn");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", fadeInOnScroll);
     </script>
   </body>
 </html>

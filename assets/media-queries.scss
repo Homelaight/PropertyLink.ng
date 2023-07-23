@@ -1,0 +1,124 @@
+/* Small devices (phones, 576px and down) */
+@media screen and (max-width: 576px) {
+    /* Adjust the font size and margins for better readability */
+    body {
+      font-size: 14px;
+    }
+  
+    nav {
+      margin-bottom: 4rem;
+    }
+  
+    .hero-section .container .door h1 {
+      font-size: 1.5rem;
+    }
+  
+    /* Make the navigation items stack vertically */
+    .nav-list li {
+      margin: 0;
+      padding: 0.5rem;
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .register li {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  
+    /* Adjust the search bar for smaller screens */
+    .search-bar {
+      width: 100%;
+    }
+  
+    /* Make the card layout stack vertically */
+    .card-container {
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    /* Center the load more button */
+    .load-btn {
+      margin: 0 auto;
+    }
+  
+    /* Adjust the size of the experience info boxes */
+    .exp-info div h2 {
+      font-size: 1.2rem;
+    }
+  
+    .exp-info div p {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  nav {
+    margin-bottom: 4rem;
+  }
+
+  .hero-section .container .door h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .search-bar {
+    width: 60%;
+  }
+
+  .exp-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .exp-info div {
+    margin-bottom: 0;
+  }
+
+  .exp-info div h2 {
+    font-size: 1.2rem;
+  }
+
+  .exp-info div p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  nav {
+    margin-bottom: 8rem;
+  }
+
+  .hero-section .container .door h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .search-bar {
+    width: 50%;
+  }
+
+  .exp-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .exp-info div {
+    margin-bottom: 0;
+  }
+
+  .exp-info div h2 {
+    font-size: 1.5rem;
+  }
+
+  .exp-info div p {
+    font-size: 1.1rem;
+  }
+}
