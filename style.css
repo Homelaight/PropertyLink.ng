@@ -251,7 +251,25 @@ ul.register li a {
   background-repeat: no-repeat;
 }
 
-.load-btn {
+.newsletter{
+  text-align: center;
+  margin-top: 180px;
+}
+
+.newsletter h1 {
+  color: black;
+
+}
+
+ .subscribe .newsletter p {
+  margin-top: 5px;
+ }
+
+ .address {
+  margin-top: 35px;
+ }
+
+.subscribe-btn {
   display: flex;
   justify-content: center;
   padding: 1rem 3rem;
@@ -264,7 +282,7 @@ ul.register li a {
   margin-bottom: 8rem;
 }
 
-.load-btn:hover {
+.subscribe-btn:hover {
   background: #415dc1;
   cursor: pointer;
 }
