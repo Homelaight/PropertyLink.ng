@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins,Open+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -251,6 +251,10 @@ ul.register li a {
   background-repeat: no-repeat;
 }
 
+h2 {
+  padding-top: 8%;
+}
+
 .newsletter{
   text-align: center;
   margin-top: 180px;
@@ -261,13 +265,32 @@ ul.register li a {
 
 }
 
+
  .subscribe .newsletter p {
   margin-top: 5px;
  }
 
  .address {
   margin-top: 35px;
+  
  }
+
+ .address p,
+.address button {
+  display: inline-block;
+  margin: 10px; 
+  align-items: center;
+  margin-left: 30%;
+}
+
+.address button {
+  margin-left: 20%;
+}
+
+ .hr { 
+  Width: 38px;
+}
+
 
 .subscribe-btn {
   display: flex;
@@ -343,6 +366,58 @@ ul li a {
   margin-top: 0.8rem;
   cursor: pointer;
 }
+/* subscribe section */
+#subemail{
+  border-bottom: 1px solid black; 
+  align-content: start ; 
+  width: 300px;
+}
+/* ebnd of sub email  */
+/* search bar for shop */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #3752b2;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #3752b2;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #3752b2;
+  background: #3752b2;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  /* top: 10%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* end of search bar for shop */
 
 /* Small devices (phones, 576px and down) */
 @media screen and (max-width: 576px) {
@@ -405,7 +480,18 @@ ul li a {
     margin: 0 auto;
   }
 
-  /* Adjust the size of the experience info boxes */
+  .exp-info {
+    flex-direction: column;
+    padding: 1rem;
+    bottom: -6rem;
+    width: 80%;
+  }
+
+  .exp-info div {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
   .exp-info div h2 {
     font-size: 1.2rem;
   }
@@ -413,6 +499,8 @@ ul li a {
   .exp-info div p {
     font-size: 0.9rem;
   }
+
+ 
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -443,6 +531,9 @@ ul li a {
   .exp-info {
     display: flex;
     justify-content: space-between;
+    width: 70%;
+    bottom: -8rem;
+    padding: 1.5rem;
   }
 
   .exp-info div {
